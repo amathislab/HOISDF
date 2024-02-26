@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Style to add space around the image */
+    .image-container {
+      margin-top: 20px; /* Adjust the value to control the space */
+      margin-bottom: 20px; /* Adjust the value to control the space */
+    }
+  </style>
+
+
+  <title>HOISDF</title>
+  <link rel="icon" type="image/x-icon" href="static/images/lablogo.ico">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" -->
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">HOISDF: Constraining 3D Hand-Object Pose Estimation with Global Signed Distance Fields</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://github.com/HaozheQi" target="_blank">Haozhe Qi</a>,</span>
+                <span class="author-block">
+                  <a href="https://sailor-z.github.io" target="_blank">Chen Zhao</a>,</span>
+                  <span class="author-block">
+                    <a href="https://people.epfl.ch/mathieu.salzmann" target="_blank">Mathieu Salzmann</a>,</span>
+                  <span class="author-block">
+                    <a href="https://people.epfl.ch/alexander.mathis?lang=en" target="_blank">Alexander Mathis</a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">École Polytechnique Fédérale de Lausanne (EPFL), Switzerland<br>Arxiv 2024</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/amathislab/HOISDF" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser"> -->
+  <!-- <div class="container is-max-desktop"> -->
+    <!-- <div class="hero-body"> -->
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+        <!-- Your video here -->
+        <!-- <source src="static/videos/banner_video.mp4"
+        type="video/mp4"> -->
+      <!-- </video> -->
+      <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
+      <!-- </h2> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Human hands are highly articulated and versatile at handling objects. Jointly estimating the 3D poses of a hand and the object it manipulates from a monocular camera is challenging due to frequent occlusions. Thus, existing methods often rely on intermediate 3D shape representations to increase performance. These representations are typically explicit, such as 3D point clouds or meshes, and thus provide information in the direct surroundings of the intermediate hand pose estimate. To address this, we introduce HOISDF, a Signed Distance Field (SDF) guided hand-object pose estimation network, which jointly exploits hand and object SDFs to provide a global, implicit representation over the complete reconstruction volume. Specifically, the role of the SDFs is threefold: equip the visual encoder with implicit shape information, help to encode hand-object interactions, and guide the hand and object pose regression via SDF-based sampling and by augmenting the feature representations. We show that HOISDF achieves state-of-the-art results on hand-object pose estimation benchmarks (DexYCB and HO3Dv2).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Put the figure one here and maintain its original aspect ratio -->
+<section class="section">
+<div class="container is-max-desktop">
+  <!-- add descriptions -->
+  <h3 class="title is-4">Conceptual advantage of the SDF-guided model over existing approaches</h3>
+  <div class="content has-text-justified">
+    <p>
+      Our model utilizes Signed Distance Fields (SDF) to provide global and dense constraints for hand-object pose estimation. In contrast to direct lifting and coarse-to-fine methods, which struggle to refine poor initial predictions, the distance field yields global cues not limited to areas near an initial prediction.
+    </p>
+  </div>
+  <img src="static/images/figure1.png" alt="Figure 1">
+</div>
+</section>
+
+<section class="hero is-light">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Methods</h2>
+      </div>
+      <h3 class="title is-4">Overall pipeline of HOISDF</h3>
+      <div class="level-set has-text-justified">
+        <p>
+          HOISDF has two parts: A global signed distance field learning module and a field-guided pose regression module. The global signed distance field learning module regresses the hand object signed distances as the intermediate representation and encodes the 3D shape information into the image backbone through implicit field learning. The field-guided pose regression module uses global field information to filter and augment the point features as well as guiding hand-object interaction. Those enhanced point features are then sent to regress hand and object poses using point-wise attention.
+        </p>
+        <div class="image-container">
+          <img src="static/images/figure2.png" alt="Figure 2" class="center-image">
+        </div>
+      </div>
+      <h3 class="title is-4">Visualization of the intermediate query points</h3>
+      <div class="level-set has-text-justified">
+        <p>
+          The darkness of the query points reflects the predicted distance from the query point to the hand (in blue) and object (in green) surfaces. The intermediate SDF representations can capture the GT 3D hand and object shapes. HOISDF effectively uses the robust global clues from SDFs to deal well with various objects and hand movements as well as their mutual occlusions.
+        </p>
+        <img src="static/images/figure3.png" alt="Figure 3" class="center-image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="hero-body">
+    <div class="container  is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Experiments</h2>
+      </div>
+      <div class="content has-text-justified">
+        <p>
+          We achieve state-of-the-art results on the DexYCB and HO3Dv2 datasets, corroborating the benefits of using SDFs as global constraints for hand-object pose estimation and the effectiveness of our approach to exploiting the field information.
+        </p>
+      
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content">
+            <h3 class="title is-4">DexYCB dataset</h3>
+            <img src="static/images/qualitative_dexycb.png" alt="qualitative_dexycb" class="center-image">
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h3 class="title is-4">HO3Dv2 dataset</h3>
+            <img src="static/images/qualitative_ho3d.png" alt="qualitative_ho3d" class="center-image">
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content">
+            <img src="static/images/table1.png" alt="table1" class="center-image">
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="static/images/table4.png" alt="table4" class="center-image">
+          </div>
+        </div>
+      </div>
+      <img src="static/images/table3.png" alt="table3" class="center-image">
+    </div>
+  </div>
+</section>
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            The work was funded by EPFL and Microsoft Swiss Joint Research Center (H.Q., A.M.). H.Q. acknowledges support from a Boehringer Ingelheim Fonds PhD stipend. We are grateful to the members of the Mathis Group and in particular Niels Poulsen for comments on an earlier version of this manuscript. We also sincerely thank Rong Wang, Wei Mao and Hongdong Li for sharing the hand-object rendering pipeline. Special thanks to the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> for the webpage template.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
