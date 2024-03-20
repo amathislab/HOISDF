@@ -1,3 +1,5 @@
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hoisdf-constraining-3d-hand-object-pose/3d-hand-pose-estimation-on-dexycb)](https://paperswithcode.com/sota/3d-hand-pose-estimation-on-dexycb?p=hoisdf-constraining-3d-hand-object-pose) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/hoisdf-constraining-3d-hand-object-pose/3d-hand-pose-estimation-on-ho-3d)](https://paperswithcode.com/sota/3d-hand-pose-estimation-on-ho-3d?p=hoisdf-constraining-3d-hand-object-pose)
+
 # HOISDF: Constraining 3D Hand-Object Pose Estimation with Global Signed Distance Fields. 
 by Haozhe Qi, Chen Zhao, Mathieu Salzmann, Alexander Mathis
 
