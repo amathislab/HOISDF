@@ -6,7 +6,7 @@
 by Haozhe Qi, Chen Zhao, Mathieu Salzmann, Alexander Mathis
 
 
-Code coming soon and no later than CVPR 2024 -- see you in Seattle in June! 
+Code coming soon and around CVPR 2024 -- see you in Seattle in June! Check out the [video](https://www.youtube.com/watch?v=tDn6NL6HHnw)!
 
 Check out our preprint on [arxiv](https://arxiv.org/abs/2402.17062).
 
