@@ -5,14 +5,16 @@
 # HOISDF: Constraining 3D Hand-Object Pose Estimation with Global Signed Distance Fields
 by Haozhe Qi, Chen Zhao, Mathieu Salzmann, Alexander Mathis, EPFL (Switzerland). 
 
-
-
-
 ## Overview
-* This repo is the official Pytorch implementation of [**HOISDF: Constraining 3D Hand-Object Pose Estimation with Global Signed Distance Fields**](https://openaccess.thecvf.com/content/CVPR2024/html/Qi_HOISDF_Constraining_3D_Hand-Object_Pose_Estimation_with_Global_Signed_Distance_CVPR_2024_paper.html) published at **CVPR'24**. 
-* We introduce a hand-object pose estimation network that uses signed distance fields (HOISDF) to introduce implicit 3D shape information.
 * We show that HOISDF achieves state-of-the-art results on hand-object pose estimation benchmarks (DexYCB and HO3Dv2).
 ![](assets/figure1.jpg)
+* We introduce a hand-object pose estimation network that uses signed distance fields (HOISDF) to introduce implicit 3D shape information.
+* This repo contains the official Pytorch implementation of [**HOISDF: Constraining 3D Hand-Object Pose Estimation with Global Signed Distance Fields**](https://openaccess.thecvf.com/content/CVPR2024/html/Qi_HOISDF_Constraining_3D_Hand-Object_Pose_Estimation_with_Global_Signed_Distance_CVPR_2024_paper.html) published at **CVPR'24**. 
+
+News:
+* July 2024: We shared preprocessed data of the interacting objects, SDF samples, & trained model weights on [Zenodo](https://zenodo.org/records/11668766)!
+* June 2024: We presented the poster at CVPR in Seattle
+* June 2024: We presented the poster at FENS in Vienna
 
 ## Environment Installation
 
@@ -32,9 +34,9 @@ by Haozhe Qi, Chen Zhao, Mathieu Salzmann, Alexander Mathis, EPFL (Switzerland).
 
 3. Download MANO model files (`MANO_LEFT.pkl` and `MANO_RIGHT.pkl`) from the [website](https://mano.is.tue.mpg.de/) and place them in the `tool/mano_models` folder.
 
-4. Download the YCB models from [here](https://rse-lab.cs.washington.edu/projects/posecnn/) and set `object_models_dir` in `config.py` to point to the dataset folder. The original mesh models are large and have different vertices for different objects. To enable batched inference, we additionally use simplified object models with 1000 vertices. Download the simplified models from [here](https://zenodo.org/records/11668766?preview=1) and set `simple_object_models_dir` in `config.py` to point to the dataset folder
+4. Download the YCB models from [here](https://rse-lab.cs.washington.edu/projects/posecnn/) and set `object_models_dir` in `config.py` to point to the dataset folder. The original mesh models are large and have different vertices for different objects. To enable batched inference, we additionally use simplified object models with 1000 vertices. Download the simplified models from [here](https://zenodo.org/records/11668766) and set `simple_object_models_dir` in `config.py` to point to the dataset folder
 
-5. Download the processed annotation files for both datasets from [here](https://zenodo.org/records/11668766?preview=1) and set `annotation_dir` in `config.py` to point to the processed data folder.
+5. Download the processed annotation files for both datasets from [here](https://zenodo.org/records/11668766) and set `annotation_dir` in `config.py` to point to the processed data folder.
 
 ## Dataset Setup
 Depending on the dataset you intend to train/evaluate follow the instructions below for the setup.
@@ -42,7 +44,7 @@ Depending on the dataset you intend to train/evaluate follow the instructions be
 ### HO3Dv2 Setup
 1. Download the dataset from the [website](https://www.tugraz.at/institute/icg/research/team-lepetit/research-projects/hand-object-3d-pose-annotation/) and set `ho3d_data_dir` in `config.py` to point to the dataset folder.
 2. Obtain Signed-Distance-Field (SDF) files for every sample. This is only needed for the training set. You can obain them with either of the following ways. Set `fast_data_dir` in `config.py` to point to the processed SDF folder.
-    * Download the processed SDF files from [here](https://zenodo.org/records/11668766?preview=1).
+    * Download the processed SDF files from [here](https://zenodo.org/records/11668766).
     * Follow the [AlignSDF](https://github.com/zerchen/AlignSDF?tab=readme-ov-file#dataset-preprocessing) repo to generate the original SDF files. Then use the `tool/pre_process_sdf.py` script to process the SDF data.
 3. If you want to train HOISDF with the rendered images, download the rendered data including the images as well as the SDF files from [here](todo) and put them into `fast_data_dir` folder.
 
@@ -55,7 +57,7 @@ Depending on the dataset you intend to train/evaluate follow the instructions be
 
 
 ## Evaluation
-Depending on the dataset you intend to evaluate follow the instructions below. To test the model with our trained weights, you can download the weights from the links provided [here](https://zenodo.org/records/11668766?preview=1) and put them in the `ckpts` folder.
+Depending on the dataset you intend to evaluate follow the instructions below. To test the model with our trained weights, you can download the weights from the links provided [here](https://zenodo.org/records/11668766) and put them in the `ckpts` folder.
 
 ### HO3Dv2
 1. In the `config.py`, modify `setting` parameter.
