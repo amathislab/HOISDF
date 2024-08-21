@@ -43,16 +43,16 @@ Depending on the dataset you intend to train/evaluate follow the instructions be
 
 ### HO3Dv2 Setup
 1. Download the dataset from the [website](https://www.tugraz.at/institute/icg/research/team-lepetit/research-projects/hand-object-3d-pose-annotation/) and set `ho3d_data_dir` in `config.py` to point to the dataset folder.
-2. Obtain Signed-Distance-Field (SDF) files for every sample. This is only needed for the training set. You can obain them with either of the following ways. Set `fast_data_dir` in `config.py` to point to the processed SDF folder.
-    * Download the processed SDF files from [here](https://zenodo.org/records/11668766).
+2. Obtain Signed-Distance-Field (SDF) files for every sample. This is only needed for the training set. You can obtain them in either of the following ways. Set `fast_data_dir` in `config.py` to point to the processed SDF folder.
+    * Download the processed SDF files for HO3Dv2 training set from [here](https://zenodo.org/records/13228003).
     * Follow the [AlignSDF](https://github.com/zerchen/AlignSDF?tab=readme-ov-file#dataset-preprocessing) repo to generate the original SDF files. Then use the `tool/pre_process_sdf.py` script to process the SDF data.
-3. If you want to train HOISDF with the rendered images, download the rendered data including the images as well as the SDF files from [here](todo) and put them into `fast_data_dir` folder.
+3. If you want to train HOISDF with the rendered images, download the rendered data including the images from [here](https://zenodo.org/records/13348980) as well as the SDF files from [here](https://zenodo.org/records/13228003) and put them into the `fast_data_dir` folder.
 
 
 ### DexYCB Setup
 1. Download the dataset from the [website](https://dex-ycb.github.io/) and set `dexycb_data_dir` in `config.py` to point to the dataset folder.
-2. Obtain Signed-Distance-Field (SDF) files for every sample. This is needed for both the training and test sets. You can obain them with either of the following ways. Set `fast_data_dir` in `config.py` to point to the processed SDF folder.
-    * Download the processed SDF files from [here](todo).
+2. Obtain Signed-Distance-Field (SDF) files for every sample. This is needed for both the training and test sets. You can obtain them in either of the following ways. Set `fast_data_dir` in `config.py` to point to the processed SDF folder.
+    * Download the processed SDF files for DexYCB test set from [here](https://zenodo.org/records/11668766) and for the DexYCB full test set from [here](https://zenodo.org/records/13228003). Since the processed SDF files for DexYCB training set and full training set are too big. We unfortunately cannot share them on Zonado and would encourage you to generate them by yourself.
     * Follow the [AlignSDF](https://github.com/zerchen/AlignSDF?tab=readme-ov-file#dataset-preprocessing) repo to generate the original SDF files. Then use the `tool/pre_process_sdf.py` script to process the SDF data.
 
 
