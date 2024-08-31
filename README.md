@@ -12,6 +12,7 @@ by Haozhe Qi, Chen Zhao, Mathieu Salzmann, Alexander Mathis, EPFL (Switzerland).
 * This repo contains the official Pytorch implementation of [**HOISDF: Constraining 3D Hand-Object Pose Estimation with Global Signed Distance Fields**](https://openaccess.thecvf.com/content/CVPR2024/html/Qi_HOISDF_Constraining_3D_Hand-Object_Pose_Estimation_with_Global_Signed_Distance_CVPR_2024_paper.html) published at **CVPR'24**. 
 
 News:
+* August 2024: We also shared additional data: [rendered images and the segmentation masks that we use to train our model on HO3Dv2](https://zenodo.org/records/13348980) and [preprocessed SDF samples and rendered data for HO3Dv2](https://zenodo.org/records/13228003).
 * July 2024: We shared preprocessed data of the interacting objects, SDF samples, & trained model weights on [Zenodo](https://zenodo.org/records/11668766)!
 * June 2024: We presented the poster at CVPR in Seattle
 * June 2024: We presented the poster at FENS in Vienna
